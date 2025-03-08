@@ -1,14 +1,17 @@
-.nav-bar-container{
-    display: flex;
-        padding: 10px;
+.nav-bar-container {
+  display: flex;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+  background: white;
 }
 
-.company-logo{
-    height: 70px;
+.company-logo {
+  height: 70px;
 }
 
-.application-name{
-    margin: auto;
-    font-size: 2rem;
-    font-weight: 700;
+.application-name {
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 700;
 }
