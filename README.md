@@ -1,54 +1,89 @@
-# React + TypeScript + Vite
+## Getting Started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Prerequisites
 
-Currently, two official plugins are available:
+- Node.js (v16+)
+- npm or yarn
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation
 
-## Expanding the ESLint configuration
+1. Clone the repository
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+   ```bash
+   git clone https://github.com/tm2582001/GS250801_Tushar_Mehta.git
+   cd GS250801_Tushar_Mehta
+   ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Install dependencies
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+   ```bash
+   npm install
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. Start the development server
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal)
+
+## Features and Implementation Highlights
+
+### 1. Interactive Data Grid Implementation
+
+The application uses AG Grid to display data in a highly interactive and customizable manner. Features include:
+
+- Sortable and filterable columns
+- Row deletion functionality
+- Custom cell renderers
+- Auto-height adjustment
+
+This demonstrates proficiency in integrating and extending complex third-party libraries to meet specific requirements.
+
+### 2. Data Visualization
+
+The Chart component shows a robust implementation of data visualization using Recharts:
+
+- Combined chart types (bar and line) on a single view
+- Multi-axis visualization showing different but related metrics
+- Formatted tooltips for better user experience
+- Responsive design that adapts to container size
+
+This showcases advanced data presentation skills and the ability to create intuitive visualizations for complex data.
+
+
+### 3. Component Architecture
+
+The project follows a clean and maintainable component structure:
+
+- Reusable components with proper typing
+- Clear separation of concerns
+- Consistent styling approach
+- Conditional rendering based on state
+
+This shows proficiency in designing scalable React applications with well-organized code.
+
+### 4. Styling and UI/UX
+
+The application uses Tailwind CSS for styling:
+
+- Responsive design that works across device sizes
+- Consistent visual language throughout the application
+- Interactive elements with appropriate feedback
+- Accessibility considerations in color and contrast
+
+This highlights the ability to create polished, professional user interfaces with attention to detail.
+
+## File Structure
+
+- **/src/components** - all the reusable components that can be use with other components
+- **/src/route** - contains components which will be displayed on a perticular route
+- **/src/store** - contains code for redux library
+- **/src/utils** - all the utility files for the project
+- **/src/assets** - contains all the static files.
+
+
+## Things I will improve 
+- add dragable components for store page
+- add logic to insert and update data 

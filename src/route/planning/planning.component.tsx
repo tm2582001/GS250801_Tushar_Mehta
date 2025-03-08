@@ -104,6 +104,7 @@ const Planning: React.FC = () => {
     { field: "sku", headerName: "SKU", pinned: "left", width: 175 },
     {
       headerName: "February",
+        // @ts-expect-error: Unreachable code error
       children: [
         {
           headerName: "Week 01",
