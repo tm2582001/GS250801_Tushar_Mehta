@@ -3,6 +3,7 @@ import Navigation from "./route/navigation/navigation.component";
 import Store from "./route/store/store.component";
 import Sku from "./route/sku/sku.component";
 import Chart from "./route/chart/chart.component";
+import Planning from "./route/planning/planning.component";
 
 // import './App.css'
 
@@ -13,7 +14,7 @@ function App() {
         <Route path="/*" Component={Navigation}>
           <Route index Component={Store} />
           <Route path="skus" Component={Sku} />
-          {/* <Route path="planning" Component={} /> */}
+          <Route path="planning" Component={Planning} />
           <Route path="chart" Component={Chart} />
         </Route>
       </Routes>

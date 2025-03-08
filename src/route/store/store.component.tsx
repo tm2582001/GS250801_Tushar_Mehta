@@ -5,7 +5,7 @@ import "./store.styles.css";
 const Store = () => {
   const stores = useAppSelector((state) => state.stores.stores);
 
-  console.log(stores);
+//   console.log(stores);
 
   return (
     <div className="store-page-wrapper">

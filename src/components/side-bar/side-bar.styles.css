@@ -25,11 +25,19 @@
   text-decoration: none;
   color: #ecf0f1;
   padding: 12px 20px;
-  display: block;
   transition: background-color 0.2s ease;
 }
 
 .side-bar nav a:hover,
 .side-bar nav a.active {
   background-color: #b6b6b6;
+}
+
+.side-bar-button{
+  display: flex;
+    gap: 10px;
+}
+
+.side-bar-icon{
+  width: 20px;
 }

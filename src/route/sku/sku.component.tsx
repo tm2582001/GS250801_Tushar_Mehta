@@ -1,10 +1,11 @@
 import { useAppSelector } from "../../utils/reducer/redux.util";
 
+
 import "../store/store.styles.css";
 
 const Sku = ()=>{
     const skus = useAppSelector((state) => state.skus.skus);
-    console.log(skus);
+    // console.log(skus);
 
     return  <div className="store-page-wrapper">
     <div className="store-page-container">
