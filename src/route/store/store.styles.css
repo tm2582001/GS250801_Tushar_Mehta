@@ -12,7 +12,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  grid-template-columns: 0.2fr 0.5fr 1fr 1fr 1fr;
   align-items: center;
   border-bottom: 1.5px solid rgba(0, 0, 0, 0.4);
 }
@@ -44,4 +44,9 @@
 .grid-container-full-border{
     padding: 1.25rem;
     border-right: 1px solid;
+}
+
+.delete-icon{
+    width: 15px;
+    cursor: pointer;
 }
