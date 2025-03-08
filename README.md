@@ -28,6 +28,11 @@
 
 4. Open your browser and navigate to `http://localhost:5173` (or the port shown in your terminal)
 
+5. Production Build Instructions
+    ```bash
+   npm run build
+   ```
+
 ## Features and Implementation Highlights
 
 ### 1. Interactive Data Grid Implementation
@@ -77,13 +82,14 @@ This highlights the ability to create polished, professional user interfaces wit
 
 ## File Structure
 
-- **/src/components** - all the reusable components that can be use with other components
-- **/src/route** - contains components which will be displayed on a perticular route
-- **/src/store** - contains code for redux library
+- **/src/components** - all the reusable components that can be used with other components.
+- **/src/route** - contains components that will be displayed on a particular route.
+- **/src/store** - contains code for the Redux library.
 - **/src/utils** - all the utility files for the project
 - **/src/assets** - contains all the static files.
 
 
-## Things I will improve 
-- add dragable components for store page
-- add logic to insert and update data 
+## Things I Will Improve
+- Add draggable components for the store page.
+- Add logic to insert and update data 
+- Improve Ui colours and optimise loading time
